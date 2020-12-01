@@ -1,4 +1,11 @@
-function loadData() {
+function warningInput(search_input) {
+  // const col_lg_4 = document.querySelector(".col-lg-4");
+  // const warningInput = document.createElement("p");
+  // col_lg_4.appendChild(warningInput);
+  // return (warningInput.innerHTML = "Mohon masukkan nama Provinsi lengkap");
+}
+
+function loadData(warningInput) {
   const cases = document.querySelectorAll(".tracking-case");
   const map_cases = document.querySelectorAll(".tracker-map-case");
 
@@ -28,6 +35,7 @@ function loadData() {
             positive_case_map.lastElementChild.innerHTML = positive_case;
             recover_case_map.lastElementChild.innerHTML = recover_case;
             death_case_map.lastElementChild.innerHTML = death_case;
+          } else {
           }
         });
       });

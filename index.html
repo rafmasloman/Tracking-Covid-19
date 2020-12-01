@@ -26,7 +26,7 @@
   <body>
     <!-- ? Navigation Bar -->
     <section class="navbar-container">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg">
         <div class="navbar-brand-text">
           <span class="navbar-brand mb-0 h1 mx-lg-5 nav-covi"
             >COVI<span class="nav-d">.D</span></span
@@ -45,10 +45,10 @@
         </button>
         <div class="collapse navbar-collapse mr-5" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-link text-dark mr-lg-5" href="#">Home</a>
-            <a class="nav-link text-dark mr-lg-5" href="#">About</a>
-            <a class="nav-link text-dark mr-lg-5" href="#">Track</a>
-            <a class="nav-link text-dark mr-lg-5" href="#">Contact</a>
+            <a class="nav-link mr-lg-5" href="#">Home</a>
+            <a class="nav-link mr-lg-5" href="#">About</a>
+            <a class="nav-link mr-lg-5" href="#">Track</a>
+            <a class="nav-link mr-lg-5" href="#">Contact</a>
           </div>
         </div>
       </nav>
@@ -86,7 +86,7 @@
         <div class="col-lg-6 my-5">
           <!-- <img src="/assets/img/Illustrator.svg" alt="" class="ml-lg-5" /> -->
           <img
-            src="/assets/img/Illustrator.svg"
+            src="./assets/img/illustrator.svg"
             class="img-fluid ml-lg-5"
             alt="Responsive image"
           />
@@ -103,7 +103,7 @@
       <div class="tracking-all-case my-5">
         <div class="row">
           <div class="col-lg">
-            <div class="tracking-case bg-primary py-3">
+            <div class="tracking-case mb-5 bg-primary py-3">
               <span
                 class="iconify"
                 data-inline="false"
@@ -117,7 +117,7 @@
             </div>
           </div>
           <div class="col-lg">
-            <div class="tracking-case bg-success py-3">
+            <div class="tracking-case mb-5 bg-success py-3">
               <span
                 class="iconify"
                 data-inline="false"
@@ -153,20 +153,20 @@
           <div class="col-lg-7">
             <div class="tracker-map ml-lg-5 position-relative">
               <img
-                src="assets/img/world map.svg"
+                src="./assets/img/world map.svg"
                 class="img-fluid indonesian-map"
                 alt="Responsive image"
               />
               <div class="tracker-map-case position-absolute">
-                <h2>Positif</h2>
+                <h2 class="text-primary mt-3">Positif</h2>
                 <p>0</p>
               </div>
               <div class="tracker-map-case position-absolute">
-                <h2>Sembuh</h2>
+                <h2 class="text-success mt-3">Sembuh</h2>
                 <p>0</p>
               </div>
               <div class="tracker-map-case position-absolute">
-                <h2>Meninggal</h2>
+                <h2 class="text-danger mt-3">Meninggal</h2>
                 <p>0</p>
               </div>
             </div>
@@ -180,12 +180,15 @@
                 placeholder="Provinsi"
               />
               <button
-                class="btn text-white btn-secondary search-btn ml-lg-3"
+                class="btn text-white btn-secondary search-btn ml-3"
                 type="button"
               >
                 Cari
               </button>
             </div>
+            <p class="tracker-input-note">
+              * Tulis Nama Provinsi dengan lengkap
+            </p>
           </div>
         </div>
       </div>

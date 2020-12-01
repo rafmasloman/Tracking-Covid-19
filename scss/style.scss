@@ -23,6 +23,13 @@ nav {
       font-weight: 500;
     }
   }
+  .nav-link {
+    color: #000;
+  }
+  .nav-link:hover {
+    color: $color-primary;
+    font-weight: 600;
+  }
 }
 
 // ? Flexbox
@@ -44,7 +51,7 @@ nav {
   .hero-title {
     height: 200px;
     background-size: 90% 100%;
-    background-image: url("/assets/img/World-Map-PNG-Photos 1.svg");
+    background-image: url("../assets/img/world-Map-PNG-Photos 1.svg");
     background-repeat: no-repeat;
     @include flex-box();
     h1 {
@@ -127,7 +134,8 @@ nav {
     box-shadow: 0 10px 20px 0 rgba($color: #000000, $alpha: 0.25);
     border-radius: 7px;
     h2 {
-      font-size: 14px;
+      font-size: 16px;
+      font-weight: 600;
     }
     p {
       font-weight: 600;
@@ -169,4 +177,9 @@ nav {
     font-size: 14px;
     font-family: $font-stack;
   }
+}
+
+.tracker-input-note {
+  font-size: 14px;
+  color: #9ca3af;
 }
