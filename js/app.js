@@ -15,19 +15,17 @@ function loadData(warningInput) {
   const search_btn = document.querySelector(".search-btn");
   const search_input = document.querySelector(".form-control");
   search_btn.addEventListener("click", function () {
-    fetch(
-      "https://opendata.arcgis.com/datasets/0c0f4558f1e548b68a1c82112744bad3_0.geojson"
-    )
+    fetch("https://indonesia-covid-19.mathdro.id/api/provinsi")
       .then((data) => data.json())
       .then((data) => {
-        const dataCovid = data.features;
+        const dataCovid = data.data;
         dataCovid.forEach((allData) => {
           const [positive_case, recover_case, death_case] = [
-            allData.properties.Kasus_Posi,
-            allData.properties.Kasus_Semb,
-            allData.properties.Kasus_Meni,
+            allData.kasusPosi,
+            allData.kasusSemb,
+            allData.kasusMeni,
           ];
-          if (search_input.value == allData.properties.Provinsi) {
+          if (search_input.value == allData.provinsi) {
             positive_case_text.lastElementChild.lastElementChild.innerHTML = positive_case;
             recover_case_text.lastElementChild.lastElementChild.innerHTML = recover_case;
             death_case_text.lastElementChild.lastElementChild.innerHTML = death_case;
