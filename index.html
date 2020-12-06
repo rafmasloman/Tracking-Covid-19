@@ -13,6 +13,13 @@
       crossorigin="anonymous"
     />
 
+    <!--? Font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
     <!-- ? My CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -173,23 +180,19 @@
           </div>
           <div class="col-lg-4 ml-lg-5">
             <h1 class="text-center my-5">Temukan Provinsi</h1>
-            <div class="input-group mb-3">
-              <input
-                type="text"
-                class="form-control tracker-search"
-                placeholder="Provinsi"
-              />
-              <button
-                class="btn text-white btn-secondary search-btn ml-3"
-                type="button"
-              >
-                Cari
-              </button>
+            <div class="dropdown">
+              <div class="dropdown-input">
+                <span class="input">Pilih Provinsi</span>
+                <!-- <div class="dropdown-btn">
+                <i class="fas fa-angle-down"></i>
+              </div> -->
+                <i class="fas fa-angle-down dropdown-btn"></i>
+              </div>
+              <ul>
+                
+              </ul>
+              
             </div>
-            <p class="tracker-input-note">
-              * Tulis Nama Provinsi dengan lengkap
-            </p>
-          </div>
         </div>
       </div>
     </section>
@@ -207,6 +210,6 @@
     ></script>
 
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-    <script src="js/app.js"></script>
+    <script type="module" src="js/app.js"></script>
   </body>
 </html>

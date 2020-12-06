@@ -1,3 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.dropdown ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 10px;
+  width: 300px;
+  max-height: 150px;
+  padding: 10px;
+  overflow-y: scroll;
+  box-shadow: 0 5px 20px 0 rgba(79, 102, 175, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition-timing-function: ease-in;
+  transition: 1s;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #b5b5b5;
+  border-radius: 10px;
+}
+.dropdown ul::-webkit-scrollbar {
+  width: 6px;
+  /* width of the entire scrollbar */
+}
+.dropdown ul::-webkit-scrollbar-thumb {
+  background-color: rgba(79, 102, 175, 0.1);
+  /* color of the scroll thumb */
+  border-radius: 0px 10px 10px 0px;
+}
+.dropdown ul.show {
+  opacity: 1;
+  transition-timing-function: ease-out;
+  transition: 1s;
+  visibility: visible;
+}
+.dropdown .province-name {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.dropdown .province-name:hover {
+  background-color: rgba(79, 102, 175, 0.1);
+}
+.dropdown .dropdown-input {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 20px 0 rgba(79, 102, 175, 0.2);
+  border-width: 1px;
+  border-style: solid;
+  border-color: #b5b5b5;
+  border-radius: 10px;
+}
+.dropdown .dropdown-input span {
+  padding-left: 5px;
+}
+.dropdown .dropdown-input:hover {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #4067cb;
+}
+.dropdown .dropdown-input .dropdown-btn {
+  margin-right: 5px;
+  font-size: 24px;
+  transition: 1s;
+}
+.dropdown .dropdown-input .dropdown-btn:hover {
+  border-style: hidden;
+  font-size: 32px;
+  /* transform: rotateX(180deg); */
+  transition: 1s;
+}
+.dropdown .dropdown-btn-change {
+  transform: rotateX(180deg);
+}
+
 nav {
   font-family: "Poppins", sans-serif;
 }
@@ -29,7 +130,7 @@ nav .nav-link:hover {
 .hero-left .hero-title {
   height: 200px;
   background-size: 90% 100%;
-  background-image: url("../assets/img/world-Map-PNG-Photos 1.svg");
+  background-image: url("./assets/img/World-Map-PNG-Photos 1.svg");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
@@ -71,7 +172,6 @@ nav .nav-link:hover {
 }
 .tracking span {
   font-weight: 600;
-  color: #4f66af;
 }
 
 .tracking-all-case {
@@ -167,21 +267,6 @@ nav .nav-link:hover {
 .tracker-map .tracker-map-case:nth-child(4) {
   top: 220px;
   left: 250px;
-}
-
-.input-group .tracker-search {
-  border-radius: 7px !important;
-  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.25);
-}
-.input-group .search-btn {
-  border-radius: 7px;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-}
-
-.tracker-input-note {
-  font-size: 14px;
-  color: #9ca3af;
 }
 
 /*# sourceMappingURL=style.css.map */

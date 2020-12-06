@@ -1,3 +1,4 @@
+@use 'modules/dropdown_style';
 $color-primary: #4f66af;
 $font-stack: "Poppins", sans-serif;
 $color-white: #ffffff;
@@ -91,7 +92,6 @@ nav {
   }
   span {
     font-weight: 600;
-    color: $color-primary;
   }
 }
 .tracking-all-case {
@@ -164,22 +164,4 @@ nav {
   //   background-size: 100% 100%;
   //   background-image: url("/assets/img/Indonesian\ map.svg");
   //   background-repeat: no-repeat;
-}
-
-// ? Input Search Styling
-.input-group {
-  .tracker-search {
-    border-radius: 7px !important;
-    box-shadow: 0 7px 15px 0 rgba($color: #000000, $alpha: 0.25);
-  }
-  .search-btn {
-    border-radius: 7px;
-    font-size: 14px;
-    font-family: $font-stack;
-  }
-}
-
-.tracker-input-note {
-  font-size: 14px;
-  color: #9ca3af;
 }
