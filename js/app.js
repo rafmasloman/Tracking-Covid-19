@@ -29,24 +29,26 @@ function loadData() {
         ul.appendChild(province_name);
         // * Ketika Provinsi pada dropdown dipilih/di click maka lakukan ini
         province_name.addEventListener("click", (e) => {
-          province_name.parentElement.previousElementSibling.firstElementChild.innerHTML =
-            e.target.innerHTML;
-          // * Mengisi jumlah kasus Positif
-          positive_case_text.lastElementChild.lastElementChild.innerHTML =
-            allDatas.kasusPosi;
-          // * Mengisi Jumlah Kasus Sembuh
-          recover_case_text.lastElementChild.lastElementChild.innerHTML =
-            allDatas.kasusSemb;
-          // * Mengisi Jumlah Kasus Meninggal
-          death_case_text.lastElementChild.lastElementChild.innerHTML =
-            allDatas.kasusMeni;
-          //?===========================================================================
-          // * Mengisi Jumlah Kasus Positif (Pada bagian Map)
-          positive_case_map.lastElementChild.innerHTML = allDatas.kasusPosi;
-          // * Mengisi Jumlah Kasus Sembuh (Pada bagian Map)
-          recover_case_map.lastElementChild.innerHTML = allDatas.kasusSemb;
-          // * Mengisi Jumlah Kasus Meninggal (Pada bagian Map)
-          death_case_map.lastElementChild.innerHTML = allDatas.kasusMeni;
+          setTimeout(() => {
+            province_name.parentElement.previousElementSibling.firstElementChild.innerHTML =
+              e.target.innerHTML;
+            // * Mengisi jumlah kasus Positif
+            positive_case_text.lastElementChild.lastElementChild.innerHTML =
+              allDatas.kasusPosi;
+            // * Mengisi Jumlah Kasus Sembuh
+            recover_case_text.lastElementChild.lastElementChild.innerHTML =
+              allDatas.kasusSemb;
+            // * Mengisi Jumlah Kasus Meninggal
+            death_case_text.lastElementChild.lastElementChild.innerHTML =
+              allDatas.kasusMeni;
+            //?===========================================================================
+            // * Mengisi Jumlah Kasus Positif (Pada bagian Map)
+            positive_case_map.lastElementChild.innerHTML = allDatas.kasusPosi;
+            // * Mengisi Jumlah Kasus Sembuh (Pada bagian Map)
+            recover_case_map.lastElementChild.innerHTML = allDatas.kasusSemb;
+            // * Mengisi Jumlah Kasus Meninggal (Pada bagian Map)
+            death_case_map.lastElementChild.innerHTML = allDatas.kasusMeni;
+          }, 2000);
         });
       }
     });
